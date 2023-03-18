@@ -1,0 +1,79 @@
+.services {
+    padding: 48px 0;
+    background-color: $mainBColor2;
+}
+.services__title {
+    @include h2Title;
+}
+.services__box {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+.services__wrapper:nth-child(1),
+.services__wrapper:nth-child(2),
+.services__wrapper:nth-child(3),
+.services__wrapper:nth-child(4),
+.services__wrapper:nth-child(5) {
+    box-shadow: 0 0 40px 0 rgba(74,121,104,.2);
+    background-color: #fff;
+    padding: 16px 16px;
+    border-radius: 5px;
+    transition: .2s;
+    .services__icon {
+        position: relative;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before {
+            content: "\e902";
+            font-family: 'icomoon';
+            position: absolute;  
+            width: 50px;
+            height: 50px;
+            font-size: 50px;
+            color: $mainColorText;
+        }
+    }
+    &:hover {
+        box-shadow: none;
+        text-decoration: none;
+    }
+}
+.services__wrapper:nth-child(2) {
+    .services__icon {
+        &::before {
+            content: "\f0f7";
+        }
+    }
+}
+.services__wrapper:nth-child(3) {
+    .services__icon {
+        &::before {
+            content: "\e903";
+        }
+    }
+}
+.services__wrapper:nth-child(4) {
+    .services__icon {
+        &::before {
+            content: "\e900";
+        }
+    }
+}
+.services__wrapper:nth-child(5) {
+    .services__icon {
+        &::before {
+            content: "\e904";
+        }
+    }
+}
+
+.services__name {
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 0 16px;
+    letter-spacing: .32px;
+    line-height: 1.5;
+}
