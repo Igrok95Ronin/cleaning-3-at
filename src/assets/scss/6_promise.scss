@@ -1,0 +1,67 @@
+.promise {
+    padding: 48px 0;
+}
+.promise__title {
+    @include h2Title;
+    margin-bottom: 50px;
+}
+.promise__box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    text-align: center;
+}
+.promise__wrapper:nth-child(1), 
+.promise__wrapper:nth-child(2), 
+.promise__wrapper:nth-child(3), 
+.promise__wrapper:nth-child(4) {
+    .promise__icon {
+        position: relative;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before {
+            content: "\f274";
+            font-family: 'icomoon';
+            position: absolute;  
+            width: 50px;
+            height: 50px;
+            font-size: 50px;
+            color: $mainColorText;
+        }
+    }
+}
+.promise__wrapper:nth-child(2) {
+    .promise__icon {
+        &::before {
+            content: "\e905";
+        }
+    }
+}
+.promise__wrapper:nth-child(3) {
+    .promise__icon {
+        &::before {
+            content: "\e901";
+        }
+    }
+}
+.promise__wrapper:nth-child(4) {
+    .promise__icon {
+        &::before {
+            content: "\e016";
+        }
+    }
+}
+
+.promise__name {
+    font-weight: bold;
+    margin: 30px 0;
+    letter-spacing: .32px;
+    line-height: 1.5;
+}
+.promise__txt {
+    padding: 0 5px;
+    letter-spacing: .32px;
+    line-height: 1.5;
+}

@@ -133,8 +133,20 @@ $mainColorText : #2fc68a;
   .icon-document:before {
     content: "\e005";
   }
+  .icon-wallet:before {
+    content: "\e016";
+  }
+  .icon-profile-male:before {
+    content: "\e040";
+  }
+  .icon-phone:before {
+    content: "\e907";
+  }
   .icon-atom:before {
     content: "\e900";
+  }
+  .icon-star:before {
+    content: "\e908";
   }
   .icon-home-outline:before {
     content: "\e901";
@@ -145,6 +157,12 @@ $mainColorText : #2fc68a;
   .icon-business:before {
     content: "\e903";
   }
+  .icon-thumb_up_off_alt:before {
+    content: "\e905";
+  }
+  .icon-cleaning_services:before {
+    content: "\e906";
+  }
   .icon-room_preferences:before {
     content: "\e904";
   }
@@ -153,5 +171,12 @@ $mainColorText : #2fc68a;
   }
   .icon-calendar-check-o:before {
     content: "\f274";
+  }
+  .icon-emlakjet:before {
+    content: "\e909";
+    color: #0ae524;
+  }
+  .icon-star-empty:before {
+    content: "\e9d7";
   }
   
