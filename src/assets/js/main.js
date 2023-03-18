@@ -3,12 +3,16 @@ var modal = document.getElementById("myModal");
 
 // Получить кнопку, которая открывает модальный
 var btn = document.getElementById("myBtn");
+var btn2 = document.getElementById("myBtn2");
 
 // Получить элемент <span>, который закрывает модальный
 var span = document.getElementsByClassName("close")[0];
 
 // Когда пользователь нажимает на кнопку, откройте модальный
 btn.onclick = function() {
+  modal.style.display = "block";
+}
+btn2.onclick = function() {
   modal.style.display = "block";
 }
 

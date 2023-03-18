@@ -1,0 +1,59 @@
+.numbers {
+    background-color: $mainBColor2;
+    padding: 48px 0;
+}
+.numbers__box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.numbers__wrapper:nth-child(1),
+.numbers__wrapper:nth-child(2),
+.numbers__wrapper:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .numbers__icons {
+        position: relative;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "\e900";
+            font-family: 'icomoon';
+            position: absolute;  
+            width: 50px;
+            height: 50px;
+            font-size: 40px;
+            color: $mainColorText;
+            left: -60px;
+        }
+    }
+}
+.numbers__wrapper:nth-child(2) {
+    .numbers__icons {
+        &::before {
+            content: "\e9d7";
+
+        }
+    }
+}
+.numbers__wrapper:nth-child(3) {
+    .numbers__icons {
+        &::before {
+            content: "\e040";
+
+        }
+    }
+}
+
+.numbers__inner {
+}
+.numbers__num {
+    font-size: 48px;
+    font-weight: 700;
+    color: $mainColorText;
+    margin-bottom: 8px;
+}
+.numbers__descr {
+}
