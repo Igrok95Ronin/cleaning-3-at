@@ -48,6 +48,50 @@ $mainColorText : #2fc68a;
         color: #fff;
     }
 }
+@mixin btn {
+    padding: 16px 32px 16px 52px;
+    border: 1px solid #fff;
+    background: #00a8cd;
+    border-radius: 70px;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3.6px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: 0;
+    transition: .3s;
+    &:hover {
+        background-color: #fff;
+        text-decoration: none;
+        color: #000;
+        position: relative;
+        span{
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                background: url('../icons/telephone-fill2.svg') no-repeat 0;
+                width: 24px;
+                height: 24px;
+                left: -30px;
+            }
+        }
+    }
+    span{
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background: url('../icons/telephone-fill.svg') no-repeat 0;
+            width: 24px;
+            height: 24px;
+            left: -30px;
+        }
+    }
+}
 @mixin h2Title {
     font-size: 36px;
     letter-spacing: .32px;

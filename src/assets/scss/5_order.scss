@@ -1,0 +1,25 @@
+.order {
+    padding: 64px 0;
+    background-color: $mainBColor;
+}
+.order__title {
+    @include h2Title;
+    color: #fff;
+}
+.order__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px
+}
+.order__formsBtn {
+    @include btnForms;
+    background-color: #fff;
+    color: $mainBColor;
+    &:hover {
+        background-color: $mainColorText;
+    }
+}
+.order__btn {
+    @include btn;
+}
