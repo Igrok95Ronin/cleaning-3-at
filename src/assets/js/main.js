@@ -23,3 +23,23 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+$(document).ready(function(){
+  $('.howWorks__box').slick({
+      infinite: false,
+      dots: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+
+        ]
+  });
+});
