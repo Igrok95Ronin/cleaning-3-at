@@ -1,0 +1,15 @@
+.confidence {
+    padding: 48px 0;
+}
+.confidence__title {
+    @include h2Title;
+}
+.confidence__box {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 50px;
+}
+.confidence__img {
+    max-width: 100%;
+    max-height: 100%;
+}

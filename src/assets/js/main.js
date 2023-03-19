@@ -1,32 +1,30 @@
 // Получить модальный
-var modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
 
 // Получить кнопку, которая открывает модальный
-var btn = document.getElementById("myBtn");
-var btn2 = document.getElementById("myBtn2");
-
+const btn = document.querySelectorAll("#myBtn");
 // Получить элемент <span>, который закрывает модальный
-var span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 // Когда пользователь нажимает на кнопку, откройте модальный
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-btn2.onclick = function() {
-  modal.style.display = "block";
-}
+btn.forEach(elem => {
+  elem.addEventListener('click', () => {
+    modal.style.display = "block";
+  })
+})
+
 
 // Когда пользователь нажимает на <span> (x), закройте модальное окно
-span.onclick = function() {
+span.onclick = () => {
   modal.style.display = "none";
 }
 
 // Когда пользователь щелкает в любом месте за пределами модального, закройте его
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+window.addEventListener('click', e => {
+  if (e.target == modal) {
+    modal.style.display = 'none';
   }
-}
+})
 
 
 $(document).ready(function(){
@@ -45,5 +43,14 @@ $(document).ready(function(){
           },
 
         ]
+  });
+});
+$(document).ready(function(){
+  $('.results__box').slick({
+      infinite: false,
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+
   });
 });
