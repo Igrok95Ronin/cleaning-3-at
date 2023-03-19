@@ -26,7 +26,8 @@
             height: 50px;
             font-size: 40px;
             color: $mainColorText;
-            left: -60px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
@@ -54,6 +55,7 @@
     font-weight: 700;
     color: $mainColorText;
     margin-bottom: 8px;
+    text-align: center;
 }
 .numbers__descr {
 }

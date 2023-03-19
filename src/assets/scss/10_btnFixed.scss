@@ -1,0 +1,71 @@
+.btnfixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+.btnfixed__box {
+    display: flex;
+    gap: 10px;
+}
+.header__findNowFixed {
+    @include btnForms;
+    background: #00a8cd;
+    border-radius: 70px;
+    color: #fff;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2.7px;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.btnFixed {
+    @include btn;
+    background-color: #333;
+    border-radius: 100%;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+    width: 4rem;
+    height: 4rem;
+    vertical-align: center;
+    cursor: pointer;
+    outline: 0;
+    span::before {
+        content: "";
+        position: absolute;
+        background: url(../icons/telephone-fill.svg) no-repeat 0;
+        width: 24px;
+        height: 24px;
+        left: -10px;
+        top: 4px;
+    }
+    &:hover {
+        background-color: #fff;
+        text-decoration: none;
+        color: #000;
+        position: relative;
+        span{
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                background: url('../icons/telephone-fill2.svg') no-repeat 0;
+                width: 24px;
+                height: 24px;
+                left: -10px;
+                top: 4px;
+            }
+        }
+    }
+}
